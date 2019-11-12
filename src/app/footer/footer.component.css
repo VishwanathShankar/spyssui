@@ -1,0 +1,56 @@
+.footer-color{
+    background-color: #585858;
+}
+.link-menu{
+    color: #fff;
+}
+.link-menu ::before{
+    content: '\f105';
+}
+.list-link{
+    display: block;
+    color: #fff;
+}
+.list-link :hover{
+    color: #f26600;
+}
+.footer-link-color{
+    color: #fff;
+    padding-left: 35px;
+    margin: 20px auto;
+}
+.footer-link-col{
+    color: #fff;
+    margin: 20px auto;
+}
+.footer-container{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer-container-copyright{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.img-logo{
+    position: relative;
+    margin: 20px auto;
+}
+.para-color{
+    color: #fff;
+}
+.Copyright-color{
+    background-color: #2e2e2e;
+}
+.Copyright-bar{
+    margin-top: 5px;
+}
+.Copyright-links{
+    background-color: #f26600;
+    width: 40px;
+    text-align: center;
+    height: 38px;
+    border-radius: 53px;
+    font-size: 25px;
+    line-height: 40px;
+    margin-left: 10px;
+}

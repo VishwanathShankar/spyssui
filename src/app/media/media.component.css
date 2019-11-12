@@ -1,0 +1,22 @@
+.img-media{
+    position: relative;
+    z-index: -1;
+    padding: 20px 0px;
+}
+.meida-block{
+    display: inline-block;
+}
+.media-header{
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+}
+.media-para{
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+.img-block{
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+.about-background{
+    background-color: #e5e5e5;
+    padding: 70px 0px;
+}
+.about-header{
+    text-align: center;
+    font-weight: bolder;
+}
+.about-para{
+    display: inline-block;
+    font-size: 15px;
+    font-family: monospace;
+}
+.about-tube{
+    display: inline-block;
+}
+.margin-about{
+    margin-bottom: 20px;
+}
+.readmore-button{
+    background-color: #f26000;
+    color: #fff;
+    border: 1px #f26000 solid;
+    padding: 8px 6px;
+    border-radius: 4px;
+}
+.button-align{
+    text-align: center;
+}
