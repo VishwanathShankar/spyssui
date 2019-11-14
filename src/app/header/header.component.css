@@ -9,6 +9,7 @@
 .header-bar{
   background-color: #f26000;
   height: 65px;
+  z-index: 10;
 }
 .logo-class{
   background-color: #f26000;
