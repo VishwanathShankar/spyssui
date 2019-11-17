@@ -4,7 +4,7 @@
 }
 
 .logo-float {
-  float: left;
+  padding: 0px 95px;
 }
 .header-bar{
   background-color: #f26000;
@@ -14,6 +14,15 @@
 .logo-class{
   background-color: #f26000;
   border-radius: 41px;
+
+}
+.sticky-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 10px;
 }
 
 .nav-item-header {
