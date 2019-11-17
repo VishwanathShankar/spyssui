@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
 
   imageObject: Array<object> = [{
     image: 'assets/images/Scroll/Class.jpg',
-    // thumbImage: 'assets/img/slider/1_min.jpeg',
     alt: 'alt of image',
     title: 'title of image'
   }, {
@@ -36,6 +35,7 @@ export class HomeComponent implements OnInit {
   constructor(@Inject(DOCUMENT) document) { }
 
   ngOnInit() {
+    console.log(this.imageObject);
   }
 
   @HostListener('window:scroll', ['$event'])

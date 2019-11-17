@@ -52,3 +52,22 @@
   .index-image{
     position: relative;
   }
+
+  .index-image {
+    height: 100%;
+  }
+
+  .index-image ::ng-deep mat-carousel  div {  
+    height: 100%;
+  }
+  .index-image ::ng-deep mat-carousel  div ul {
+    height: 100%;
+  }
+  .index-image ::ng-deep mat-carousel  div ul li {
+    height: 100%;
+  }
+
+  .index-image ::ng-deep .carousel-indicators {
+    height: auto !important;
+    left: 35%;
+  }
