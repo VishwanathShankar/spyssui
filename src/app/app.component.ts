@@ -1,5 +1,5 @@
 import { Component, HostListener, Inject } from '@angular/core';
-
+import { } from 'googlemaps';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,8 @@ import { Component, HostListener, Inject } from '@angular/core';
 })
 export class AppComponent {
   title = 'spyss';
+  
+
   constructor() {
 
   }

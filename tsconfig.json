@@ -9,6 +9,7 @@
     "experimentalDecorators": true,
     "allowJs":true,
     "module": "esnext",
+    "types": ["googlemaps"],
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",

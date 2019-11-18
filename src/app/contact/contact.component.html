@@ -1,11 +1,31 @@
-<div class="container">
+<div class="container contact-padding">
     <div class="col-md-12 contact-align">
         <h1>CONTACT US</h1>
     </div>
     <div class="col-md-12 contact-free">
         <p>Feel free to contact us.</p>
     </div>
-    <div class="col-md-12">
-        <div class="col-md-6"></div>
+    <div class="container">
+        <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+            <div class="row justify-content-md-center contact-margin">
+                <div class="col-md-4 offset-md-2">
+                    <label class="contact-label">Name</label>
+                    <input type="text" name = "Name" class="contact-input">
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <label class="contact-label">Email</label>
+                    <input type="email" name = "emailid" class="contact-input">
+                </div>
+            </div>
+            <div class="row justify-content-md-center contact-margin">
+                <div class="col-md-9 offset-md-2">
+                    <label class="contact-label">Message</label>
+                    <textarea type="text" rows="7" name="description" class="contact-text"></textarea>
+                </div>
+            </div>
+            <div class="row justify-content-md-center contact-margin">
+                <input type="submit" value="Submit" class="contact-button">
+            </div>
+        </form>
     </div>
 </div>
