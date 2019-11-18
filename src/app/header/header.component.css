@@ -24,6 +24,12 @@
   z-index: 2;
   padding: 10px;
 }
+.header-font{
+  color: #fff;
+}
+.button-color{
+  background-color: black !important; 
+}
 
 .nav-item-header {
   display: inline-block;
@@ -42,9 +48,9 @@
 }
 
 .sign-button {
-  background-color: black;
+  background-color: #f26000;
   color: #fff;
-  border-color: black;
+  border-color: #f26000;
   height: 38px;
   border-radius: 5px;
 }

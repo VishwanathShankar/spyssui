@@ -1,109 +1,3 @@
-<!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark" mdbStickyHeader style="z-index:2">
-    <mdb-navbar-brand>
-        <div class="row">
-            <div class="col-md-12 header-bar">
-                <div class="col-md-3 logo-float">
-                    <a href="./">
-                        <img src="assets/images/spyss-logo-128.png" height="80" width="80" class="logo-class">
-                    </a>
-                </div>
-                <div class="col-md-9 nav-right">
-                    <ul class="nav-dropdown nav-right" data-app-modern-menu="true">
-                        <a href="index.html" class="nav-link-header  text-black">HOME</a>
-                        <div class="dropdown nav-item-header">
-                            <button class="dropbtn">ABOUT US
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">About SPYSS</a>
-                                <a href="#">How Unique we are</a>
-                                <a href="#">Logo Implication</a>
-                            </div>
-                        </div>
-                        <div class="dropdown nav-item-header">
-                            <button class="dropbtn">BRANCHES
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">Search for your nearest branch</a>
-                                <a href="#">Branch list</a>
-                            </div>
-                        </div>
-                        <div class="dropdown nav-item-header">
-                            <button class="dropbtn">GALLERY
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">Children</a>
-                                <a href="#">Youth</a>
-                                <a href="#">Working professionals</a>
-                                <a href="#">Women</a>
-                                <a href="#">Theraphy</a>
-                                <a href="#">Senior citizens</a>
-                                <a href="#">National</a>
-                                <a href="#">International</a>
-                            </div>
-                        </div>
-                        <div class="dropdown nav-item-header">
-                            <button class="dropbtn">EVENTS
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <div class="dropdown-right">Priliminary camp
-                                    <i class="fa fa-caret-right"></i>
-                                    <div class="dropdown-content-right">
-                                        <a href="#">Children</a>
-                                        <a href="#">Youth</a>
-                                        <a href="#">Working professionals</a>
-                                        <a href="#">Women</a>
-                                        <a href="#">Theraphy</a>
-                                        <a href="#">Senior citizens</a>
-                                        <a href="#">National</a>
-                                        <a href="#">International</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown-right">Prantha
-                                    <i class="fa fa-caret-right"></i>
-                                    <div class="dropdown-content-right">
-                                        <a href="#">Children</a>
-                                        <a href="#">Youth</a>
-                                        <a href="#">Working professionals</a>
-                                        <a href="#">Women</a>
-                                        <a href="#">Theraphy</a>
-                                        <a href="#">Senior citizens</a>
-                                        <a href="#">National</a>
-                                        <a href="#">International</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown-right">Atmanu Sandana
-                                    <i class="fa fa-caret-right"></i>
-                                    <div class="dropdown-content-right">
-                                        <a href="#">Brahmacharya</a>
-                                        <a href="#">Gruhasta</a>
-                                        <a href="#">Vanaprastha</a>
-                                        <a href="#">Sanyasa</a>
-                                    </div>
-                                </div>
-                                <a href="#">Work Shops</a>
-                                <a href="#">Sahal</a>
-                                <a href="#">Matru Bhojan</a>
-                                <a href="#">Sneha Milan</a>
-                                <a href="#">Satsang</a>
-                                <a href="#">Tracking</a>
-                                <a href="#">Our Events</a>
-                            </div>
-                        </div>
-                        <a class="nav-link-header text-black">CONTACT US</a>
-                        <a class="nav-link-header text-black">Language</a>
-                        <div class="dropdown nav-item-header">
-                            <button class="sign-button">Sign in</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </mdb-navbar-brand>
-</mdb-navbar> -->
 <div class="row sticky-nav">
 
     <div class="col-md-6 logo-float">
@@ -112,8 +6,8 @@
         </a>
     </div>
     <div class="col-md-6 nav-right">
-        <button mat-button>HOME</button>
-        <button mat-button [matMenuTriggerFor]="aboveMenu">ABOUT US
+        <button mat-button class="header-font">HOME</button>
+        <button mat-button [matMenuTriggerFor]="aboveMenu" class="header-font">ABOUT US
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #aboveMenu="matMenu" yPosition="above">
@@ -122,7 +16,7 @@
             <button mat-menu-item>Logo Implication</button>
         </mat-menu>
 
-        <button mat-button [matMenuTriggerFor]="belowMenu">BRANCHES
+        <button mat-button [matMenuTriggerFor]="belowMenu" class="header-font">BRANCHES
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #belowMenu="matMenu" yPosition="below">
@@ -130,7 +24,7 @@
             <button mat-menu-item>Branch list</button>
         </mat-menu>
 
-        <button mat-button [matMenuTriggerFor]="beforeMenu">GALLERY
+        <button mat-button [matMenuTriggerFor]="beforeMenu" class="header-font">GALLERY
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #beforeMenu="matMenu" xPosition="before">
@@ -145,7 +39,7 @@
         </mat-menu>
 
 
-        <button mat-button [matMenuTriggerFor]="afterMenu">EVENTS
+        <button mat-button [matMenuTriggerFor]="afterMenu" class="header-font">EVENTS
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #afterMenu="matMenu" xPosition="after">
@@ -187,8 +81,8 @@
             <button mat-menu-item>Our Events</button>
         </mat-menu>
 
-        <button mat-button>Contact Us</button>
-        <button mat-button class="sign-button"> Sign Up</button>
+        <button mat-button class="header-font">Contact Us</button>
+        <button mat-button class="sign-button" id="signup"> Sign Up</button>
     </div>
-
+ 
 </div>
