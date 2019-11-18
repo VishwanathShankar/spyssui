@@ -27,3 +27,21 @@
 .button-align{
     text-align: center;
 }
+
+.om-background{
+    /* background: url('/assets/images/om-square.png'); */
+    background-color: turquoise;
+    padding: 70px 10px;
+}
+.om-background .part1 , .om-background .part2{
+    padding: 1% 8%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+}
+
+.om-background h3 {
+    margin: 8% 25%;
+}
+.om-background button {
+    margin: 10% 35%;
+}
