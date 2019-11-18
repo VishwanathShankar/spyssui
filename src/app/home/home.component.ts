@@ -35,7 +35,6 @@ export class HomeComponent implements OnInit {
   constructor(@Inject(DOCUMENT) document) { }
 
   ngOnInit() {
-    console.log(this.imageObject);
   }
 
   @HostListener('window:scroll', ['$event'])

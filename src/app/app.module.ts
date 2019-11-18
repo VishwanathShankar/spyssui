@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatModule } from './material.module';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     HomeComponent,
     MediaComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MapComponent
   ],
   imports: [
     MatModule,
