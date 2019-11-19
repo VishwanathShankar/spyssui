@@ -16,6 +16,22 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  contact() {
+    const headerBar = document.getElementById('navbar');
+    const headerimg = document.getElementById('imgNav');
+    const headerbut = document.getElementById('signup');
+    headerBar.classList.add('sticky-header');
+    headerimg.classList.add('logo-class-header');
+    headerbut.classList.add('button-color-header');
+  }
 
+  home() {
+    const headerBar = document.getElementById('navbar');
+    const headerimg = document.getElementById('imgNav');
+    const headerbut = document.getElementById('signup');
+    headerBar.classList.remove('sticky-header');
+    headerimg.classList.remove('logo-class-header');
+    headerbut.classList.remove('button-color-header');
+  }
 
 }

@@ -14,6 +14,7 @@ import { MatModule } from './material.module';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { MapComponent } from './map/map.component';
 import { MainComponent } from './main/main.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MainComponent } from './main/main.component';
     AboutComponent,
     ContactComponent,
     MapComponent,
-    MainComponent
+    MainComponent,
+    ContactusComponent
   ],
   imports: [
     MatModule,

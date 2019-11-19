@@ -30,6 +30,9 @@
 .button-color{
   background-color: black !important; 
 }
+.button-color-header{
+  background-color: black !important;
+}
 
 .nav-item-header {
   display: inline-block;
@@ -154,4 +157,17 @@
 
 .dropdown-content-right a:hover {
   background-color: #ddd;
+}
+.sticky-header{
+  background: #f26000;
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+  position: fixed;
+  top: 0;
+  height: 65px;
+  width: 100%;
+  z-index: 3;
+}
+.logo-class-header{
+  background-color: #f26000;
+  border-radius: 41px;
 }

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MediaComponent } from './media/media.component';
 import { MainComponent } from './main/main.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
   {
@@ -17,8 +18,10 @@ const routes: Routes = [
   },
   {
     path: 'media', component: MediaComponent
+  },
+  {
+    path: 'contact', component: ContactusComponent
   }
-
 ];
 
 @NgModule({

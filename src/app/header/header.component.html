@@ -1,17 +1,16 @@
 <div class="row sticky-nav">
-
     <div class="col-md-6 logo-float">
-        <a href="./">
+        <a href="./home">
             <img src="assets/images/spyss-logo-128.png" height="80" width="80" id="imgNav">
         </a>
     </div>
     <div class="col-md-6 nav-right">
-        <button mat-button class="header-font">HOME</button>
+        <button mat-button class="header-font" routerLink="/home" routerLinkActive="active" (click)="home()">HOME</button>
         <button mat-button [matMenuTriggerFor]="aboveMenu" class="header-font">ABOUT US
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #aboveMenu="matMenu" yPosition="above">
-            <button mat-menu-item>About SPYSS</button>
+            <button mat-menu-item routerLink="/about" routerLinkActive="active">About SPYSS</button>
             <button mat-menu-item>How Unique we are</button>
             <button mat-menu-item>Logo Implication</button>
         </mat-menu>
@@ -81,7 +80,7 @@
             <button mat-menu-item>Our Events</button>
         </mat-menu>
 
-        <button mat-button class="header-font">CONTACT US</button>
+        <button mat-button class="header-font" routerLink="/contact" routerLinkActive="active" (click)="contact()">CONTACT US</button>
         <button mat-button class="sign-button" id="signup"> Sign Up</button>
     </div>
  

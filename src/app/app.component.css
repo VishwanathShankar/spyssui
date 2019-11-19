@@ -11,3 +11,12 @@
     width: 100%;
     z-index: 3;
 }
+.sticky-header{
+    background: #f26000;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    height: 65px;
+    width: 100%;
+    z-index: 3;
+  }
