@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatModule } from './material.module';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { MapComponent } from './map/map.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MapComponent } from './map/map.component';
     MediaComponent,
     AboutComponent,
     ContactComponent,
-    MapComponent
+    MapComponent,
+    MainComponent
   ],
   imports: [
     MatModule,
