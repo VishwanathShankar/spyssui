@@ -27,3 +27,40 @@
 .button-align{
     text-align: center;
 }
+
+.om-background {
+    background-image: url('../../assets/images/ander-burdain-180587-2000x1333.jpg');
+    padding: 70px 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.om-background {
+    position: relative;
+}
+.om-background .overlay {
+    opacity: 0.5;
+    background-color: rgb(79, 65, 42);
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.om-background .part1 , .om-background .part2{
+    padding: 1% 8%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: white;
+    z-index: 1;
+}
+
+.om-background h3 {
+    margin: 8% 25%;
+}
+.om-background button {
+    margin: 10% 35%;
+}
