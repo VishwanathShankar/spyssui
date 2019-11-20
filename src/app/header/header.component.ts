@@ -9,23 +9,26 @@ import { DOCUMENT } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
 
+  constructor() { }
+
   selected = false;
   selectBranch = false;
-
-  constructor() { }
+  commonHeader: boolean;
 
   ngOnInit() {
   }
-  contact() {
+  common() {
     const headerBar = document.getElementById('navbar');
     const headerimg = document.getElementById('imgNav');
     const headerbut = document.getElementById('signup');
     headerBar.classList.add('sticky-header');
     headerimg.classList.add('logo-class-header');
     headerbut.classList.add('button-color-header');
+    this.commonHeader = true;
   }
 
   home() {
+    this.commonHeader = false;
     const headerBar = document.getElementById('navbar');
     const headerimg = document.getElementById('imgNav');
     const headerbut = document.getElementById('signup');

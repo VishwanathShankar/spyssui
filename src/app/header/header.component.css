@@ -26,6 +26,7 @@
 }
 .header-font{
   color: #fff;
+  outline: none;
 }
 .button-color{
   background-color: black !important; 
