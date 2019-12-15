@@ -15,6 +15,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
 import { MapComponent } from './map/map.component';
 import { MainComponent } from './main/main.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     ContactComponent,
     MapComponent,
     MainComponent,
-    ContactusComponent
+    ContactusComponent,
+    EventsComponent,
   ],
   imports: [
     MatModule,

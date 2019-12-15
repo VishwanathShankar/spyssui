@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -32,7 +33,11 @@ export class HomeComponent implements OnInit {
     alt: 'Image alt'
   }
   ];
-  constructor(@Inject(DOCUMENT) document) { }
+
+  safeSrc: SafeResourceUrl;
+  constructor(private sanitizer: DomSanitizer, @Inject(DOCUMENT) document ) {
+    this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/CjVDbVYNes4');
+  }
 
   ngOnInit() {
   }

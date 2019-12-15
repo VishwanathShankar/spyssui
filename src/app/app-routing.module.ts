@@ -5,10 +5,11 @@ import { AboutComponent } from './about/about.component';
 import { MediaComponent } from './media/media.component';
 import { MainComponent } from './main/main.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { EventsComponent } from './events/events.component';
 
 const routes: Routes = [
   {
-    path: '', component: MainComponent,
+    path: '', component: HomeComponent,
   },
   {
     path: 'home', component: HomeComponent
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: 'contact', component: ContactusComponent
+  },
+  {
+    path: 'UpcomingEvents', component: EventsComponent
   }
 ];
 

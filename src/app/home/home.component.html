@@ -11,10 +11,126 @@
     [useMouseWheel]="false" orientation="ltr">
     <mat-carousel-slide #matCarouselSlide *ngFor="let obj of imageObject" [image]="obj.image" overlayColor="#00000040"
       [hideOverlay]="false">
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 22%;">
+        <h3 class="inspiration">An Inspiration To Learn Experience</h3>
+        <div class="row">
+            <div class="homePadding">
+                <button class="buttonClass">My Nearest Branch</button>
+            </div>
+            <div >
+                <button class="buttonClass">Upcoming Events</button>
+            </div>
+             <!-- <button>test</button> -->
+        </div>
+            <button>test</button>
+
+      </div>
+      
     </mat-carousel-slide>
   </mat-carousel>
 </div>
-<app-media></app-media>
-<app-about></app-about>
+
+<div class="container">
+  <div class="media-container-row img-media">
+      <div class="col-12 col-md-6 col-lg-4 meida-block">
+          <div class="img-block">
+              <img src="assets/images/sanskara-square.png" width="238" height="200" >
+          </div>
+          <div>
+              <h4 class="media-header">RIGHT ATTITUDE</h4>
+              <p class="media-para">Fairs, sports tournaments, family quizzes and food festivals will be held in parks, squares, courtyards, squares.</p>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 meida-block">
+          <div class="img-block">
+              <img src="assets/images/om-square.png" width="238" height="200" >
+          </div>
+          <div>
+              <h4 class="media-header">TEAM SPIRIT</h4>
+              <p class="media-para">Urban festival of surf culture, which for the second time will be held in the open air in the center.</p>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 meida-block">
+          <div class="img-block">
+              <img src="assets/images/seve-square.png" width="238" height="200" >
+          </div>
+          <div>
+              <h4 class="media-header">SELFLESS SERVICE</h4>
+              <p class="media-para">The only city festival dedicated to the life and responsible keeping of dogs in the megalopolis.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- <app-about></app-about> -->
+<div class="about-background">
+  <div class="container">
+      <div class="margin-about">
+          <h1 class="about-header">SPYSS</h1>
+      </div>
+      <div class="col-md-12">
+          <div class="col-md-6 about-tube">
+              <iframe [class.thumbnail]="thumbnail" [src]="safeSrc" width="460" height="430" frameborder="0"
+                  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+          </div>
+          <div class="col-md-6 about-para">
+              <p>
+                  SPYSS was started in 1980 as a small yoga camp at Tumkur, Karnataka and ever since grown to become a
+                  large organization with 700+ branches across the world with more than 40,000+ voluntary teachers and
+                  millions of Yoga practitioners. The samithi’s success attributes to the leadership of its Chief
+                  Convener – Shri A R Ramaswamyanna, under the blessings of Holiness late Shri RaghavendraSwamiji of
+                  Malladihalli, mentoring from late Shri Ajit Kumar and practice methodology of late Padmavibhushan Dr
+                  B. K. S.Iyengar. The motto of SPYSS is defined as – Sanskara (value based behavior and
+                  activities),Sanghatane (identifying oneself with a bigger cause) and Seve (service to humanity). To
+                  achieve these objectives, SPYSS is bringing a silent transformation in the lives of millions of
+                  people through its daily yoga classes. The transformation is reflected through daily conduct,
+                  healthy life style, dynamic personality, harmonious family and positive approach to life. All these
+                  contribute to a better society around us.</p>
+              <div class="button-align">
+                  <button class="readmore-button">
+                      <i class="fa fa-file-text-o"></i>
+                      READ MORE</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="om-background">
+
+  <div class="container">
+      <div class="row">
+          <div class="part1 col-md-6">
+              <h3>
+                  What We Do?
+              </h3>
+              <section>
+                  We try to transform the personality of an individual through daily conduct, healthy life style,
+                  dynamic
+                  personality, harmonious family and positive approach to life through main motto's of SPYSS defined
+                  as –
+                  Sanskara (value based behavior and activities),Sanghatane (identifying oneself with a bigger cause)
+                  and
+                  Seve
+                  (service to humanity)
+              </section>
+              <button class="readmore-button">
+                  Read More
+              </button>
+          </div>
+          <div class="part2 col-md-6">
+              <h3>
+                  Who We Are?
+              </h3>
+              <section>
+                  An organization spearheading a movement for social enrichment through Yoga Sadhana.
+              </section>
+              <button class="readmore-button">
+                  Read More
+              </button>
+          </div>
+      </div>
+  </div>
+  <div class="overlay"></div>
+</div>
 <app-contact></app-contact>
 <app-map></app-map>
