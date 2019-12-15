@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
+  image='/assets/images/Main_yoga.jpg';
+  images = []
   constructor() { }
 
   ngOnInit() {
