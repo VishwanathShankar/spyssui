@@ -42,46 +42,15 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #afterMenu="matMenu" xPosition="after">
-            <button mat-menu-item [matMenuTriggerFor]="priliminary">Priliminary camp</button>
-            <mat-menu #priliminary="matMenu" yPosition="below">
-                <button mat-menu-item (click)="common()">Children</button>
-                <button mat-menu-item (click)="common()">Youth</button>
-                <button mat-menu-item (click)="common()">Working professionals</button>
-                <button mat-menu-item (click)="common()">Women</button>
-                <button mat-menu-item (click)="common()">Theraphy</button>
-                <button mat-menu-item (click)="common()">Senior citizens</button>
-                <button mat-menu-item (click)="common()">National</button>
-                <button mat-menu-item (click)="common()">International</button>
-            </mat-menu>
-            <button mat-menu-item [matMenuTriggerFor]="Prantha">Prantha</button>
-            <mat-menu #Prantha="matMenu" yPosition="below">
-                <button mat-menu-item (click)="common()">Children</button>
-                <button mat-menu-item (click)="common()">Youth</button>
-                <button mat-menu-item (click)="common()">Working professionals</button>
-                <button mat-menu-item (click)="common()">Women</button>
-                <button mat-menu-item (click)="common()">Theraphy</button>
-                <button mat-menu-item (click)="common()">Senior citizens</button>
-                <button mat-menu-item (click)="common()">National</button>
-                <button mat-menu-item (click)="common()">International</button>
-            </mat-menu>
-            <button mat-menu-item [matMenuTriggerFor]="Atmanu">Atmanu Sandana</button>
-            <mat-menu #Atmanu="matMenu" yPosition="below">
-                <button mat-menu-item (click)="common()">Brahmacharya</button>
-                <button mat-menu-item (click)="common()">Gruhasta</button>
-                <button mat-menu-item (click)="common()">Vanaprastha</button>
-                <button mat-menu-item (click)="common()">Sanyasa</button>
-            </mat-menu>
-            <button mat-menu-item (click)="common()">Work Shops</button>
-            <button mat-menu-item (click)="common()">Sahal</button>
-            <button mat-menu-item (click)="common()">Matru Bhojan</button>
-            <button mat-menu-item (click)="common()">Sneha Milan</button>
-            <button mat-menu-item (click)="common()">Satsang</button>
-            <button mat-menu-item (click)="common()">Tracking</button>
-            <button mat-menu-item (click)="common()">Our Events</button>
+            <button mat-menu-item (click)="common()" routerLink = "/UpcomingEvents">Upcoming Events</button>
+            <button mat-menu-item (click)="common()" routerLink = "/PreviousEvents">Previous Events</button>
         </mat-menu>
 
         <button mat-button class="header-font" routerLink="/contact" routerLinkActive="active" (click)="common()">CONTACT US</button>
-        <button mat-button class="sign-button" id="signup"> Sign Up</button>
+        <button mat-button class="sign-button" id="signup" (click)="openDialog()"> Sign Up</button>
     </div>
  
 </div>
+<ng-template #login>
+    Hi
+</ng-template>

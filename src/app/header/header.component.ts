@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { Component, OnInit, HostListener, Inject, ViewChild, ViewContainerRef, ElementRef, TemplateRef } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +9,32 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
+  @ViewChild('login', { static: false })
+  login;
   selected = false;
   selectBranch = false;
   commonHeader: boolean;
 
+  constructor(private dialog: MatDialog) { }
+
+
   ngOnInit() {
   }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(this.login, {
+      width: '250px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+
+
+
   common() {
     const headerBar = document.getElementById('navbar');
     const headerimg = document.getElementById('imgNav');
