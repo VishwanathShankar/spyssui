@@ -16,6 +16,7 @@ import { MapComponent } from './map/map.component';
 import { MainComponent } from './main/main.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { EventsComponent } from './events/events.component';
     MainComponent,
     ContactusComponent,
     EventsComponent,
+    RegisterComponent,
   ],
   imports: [
     MatModule,

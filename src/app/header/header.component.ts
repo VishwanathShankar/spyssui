@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener, Inject, ViewChild, ViewContainerRef, E
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import {ErrorStateMatcher} from '@angular/material/core';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,7 @@ export class HeaderComponent implements OnInit {
   selected = false;
   selectBranch = false;
   commonHeader: boolean;
+  forgot: boolean;
 
   constructor(private dialog: MatDialog) { }
 
@@ -22,8 +24,9 @@ export class HeaderComponent implements OnInit {
   }
 
   openDialog(): void {
+    this.forgot = true;
     const dialogRef = this.dialog.open(this.login, {
-      width: '250px',
+      width: '325px',
       data: {}
     });
 
@@ -32,6 +35,9 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  Forgot(value){
+    this.forgot = value;
+  }
 
 
 

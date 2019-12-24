@@ -1,3 +1,13 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
 .text-black {
   color: #fff !important;
   padding: 0px 10px;
@@ -49,6 +59,25 @@
 .nav-right {
   float: right;
   padding-top: 3px;
+}
+
+.login-button{
+  background-color: #f26000;
+  color: #fff;
+  border-color: #f26000;
+  height: 38px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login-link-forgot{
+  padding-right: 15px;
+  color: #007bff !important;
+  cursor: pointer;
+}
+
+.login-link-forgot:hover {
+  text-decoration: underline;
 }
 
 .sign-button {

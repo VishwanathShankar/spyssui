@@ -5,7 +5,8 @@
         </a>
     </div>
     <div class="col-md-6 nav-right">
-        <button mat-button class="header-font" routerLink="/home" routerLinkActive="active" (click)="home()">HOME</button>
+        <button mat-button class="header-font" routerLink="/home" routerLinkActive="active"
+            (click)="home()">HOME</button>
         <button mat-button [matMenuTriggerFor]="aboveMenu" class="header-font">ABOUT US
             <i class="fa fa-caret-down"></i>
         </button>
@@ -42,15 +43,47 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <mat-menu #afterMenu="matMenu" xPosition="after">
-            <button mat-menu-item (click)="common()" routerLink = "/UpcomingEvents">Upcoming Events</button>
-            <button mat-menu-item (click)="common()" routerLink = "/PreviousEvents">Previous Events</button>
+            <button mat-menu-item (click)="common()" routerLink="/UpcomingEvents">Upcoming Events</button>
+            <button mat-menu-item (click)="common()" routerLink="/PreviousEvents">Previous Events</button>
         </mat-menu>
 
-        <button mat-button class="header-font" routerLink="/contact" routerLinkActive="active" (click)="common()">CONTACT US</button>
+        <button mat-button class="header-font" routerLink="/contact" routerLinkActive="active"
+            (click)="common()">CONTACT US</button>
         <button mat-button class="sign-button" id="signup" (click)="openDialog()"> Sign Up</button>
     </div>
- 
+
 </div>
 <ng-template #login>
-    Hi
+    <form class="example-form" *ngIf = "forgot">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="User name" type="text" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" type="Password" required>
+        </mat-form-field>
+        <button mat-button class="login-button" id="login"> Login</button>
+        <div>
+            <a (click)="Forgot(false)" class="login-link-forgot">
+                Forgot password?
+            </a>
+            <a (click)="common()" href="/register">
+                Create an account
+            </a>
+        </div>
+    </form>
+    <form class="example-form" *ngIf = "!forgot">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email" type="text" required>
+        </mat-form-field>
+        <button mat-button class="login-button" id="submit"> Submit</button>
+        <div>
+            <a (click)="Forgot(true)" class="login-link-forgot">
+                Back to Signin
+            </a>
+            <a href="/register" (click)="common()">
+                Create an account
+            </a>
+        </div>
+    </form>
 </ng-template>

@@ -1,0 +1,59 @@
+.description {
+    background-color: #e5e5e5;
+    min-height: 51px;
+    margin-top: 65px;
+}
+
+.contact-inline {
+    display: inline-block;
+}
+
+.contact-margin {
+    margin-top: 10px;
+}
+
+.registation-header {
+    font-family: 'Inconsolata', monospace;
+}
+
+.registration-div {
+    text-align: center;
+}
+
+.mat-width {
+    width: 75%;
+}
+
+.gender-display {
+    display: block !important;
+    font-weight: bold;
+}
+
+.mat-radio {
+    padding-left: 50px;
+}
+
+.mat-width-res {
+    width: 88%;
+}
+
+.checkox-display {
+    display: block;
+}
+
+.login-button {
+    background-color: #f26000;
+    color: #fff;
+    border-color: #f26000;
+    height: 38px;
+    border-radius: 5px;
+}
+
+.register-button {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.declare {
+    font-weight: bold;
+}

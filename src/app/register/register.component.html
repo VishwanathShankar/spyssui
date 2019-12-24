@@ -1,0 +1,180 @@
+<div class="description">
+    <div class="container">
+        <div class="col-md-6 contact-inline contact-margin">
+            <h3>Register</h3>
+        </div>
+        <div class="col-md-6 contact-inline contact-margin contact-text-align">
+            <ul>
+                <li class="contact-inline">
+                    <a href="/home">Home</a>
+                </li>
+                <li class="contact-inline">
+                    / Registration
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <div class="registration-div">
+            <h3 class="registation-header">
+                SPYSS Registration Form
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="Full Name" type="text" required>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="Age" type="number" required>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label id="example-radio-group-label" class="gender-display">Gender</label>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female" class="mat-radio">Female</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="Email" type="text" required>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="Email" type="text" required>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="mat-width">
+                    <mat-label>Country of Origin</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let country of countries" [value]="country.value">
+                            {{country.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="mat-width">
+                    <mat-label>Nationality</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let nation of Nations" [value]="nation.value">
+                            {{nation.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="Passport No" type="number">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <mat-form-field class="example-full-width mat-width-res">
+                    <textarea matInput placeholder="Residential Address"></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder="Travelling From"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder="Laguages Known"></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="WhatsApp No." type="number" required>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <input matInput placeholder="Alternate Contact No." type="number" required>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label id="example-radio-group-label" class="gender-display">Scanned Visa Permit/Passport Copy</label>
+                <input type="file" required>
+            </div>
+            <div class="col-md-6">
+                <label id="example-radio-group-label" class="gender-display">Update your Latest Photo</label>
+                <input type="file" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label id="example-radio-group-label" class="gender-display">Are you new to yoga</label>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="Yes">Yes</mat-radio-button>
+                    <mat-radio-button value="No" class="mat-radio">No</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col-md-6">
+                <label id="example-radio-group-label" class="gender-display">Have you attended yoga camps
+                    earlier?</label>
+                <mat-checkbox class="checkox-display">Yes</mat-checkbox>
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder=""></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder="Have did you know about the camp ?"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder="Intention of joining camp ?"></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder="Countries Travelled in past 1o years ?"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width mat-width">
+                    <textarea matInput placeholder="Hobbies"></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <mat-checkbox class="declare">Declaration</mat-checkbox>
+            <p>I here by declare that the particulars written above is true and correct to the best of my knowledge. I
+                am traveling / living in India on valid travel approvals. I am registering for the International Yoga
+                camp being conducted by Shri Pathanjali Yoga Shikshana Samiti (R), Karnataka on my own interests and I
+                will adhere to the rules of the camp.</p>
+        </div>
+        <div class="col-md-12 register-button">
+            <button mat-button class="login-button" id="register">Register</button>
+        </div>
+    </div>
+</div>
+<app-map></app-map>
