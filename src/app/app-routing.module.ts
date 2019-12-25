@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
+import { FindBranchComponent } from './find-branch/find-branch.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: 'register', component: RegisterComponent
+  },
+  {
+    path: 'findBranch', component: FindBranchComponent
   }
 ];
 
