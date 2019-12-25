@@ -1,0 +1,19 @@
+.table-width{
+    width: 100%;
+}
+tr.mat-header-row{
+    background-color: #787675 !important;
+}
+
+th.mat-header-cell {
+    color: white !important;
+}
+div.mat-sort-header-arrow{
+    color: white !important;
+}
+th.mat-header-cell div div.ng-trigger{
+    color: white !important;
+}
+.table-container{
+    margin-top: 5px;
+}

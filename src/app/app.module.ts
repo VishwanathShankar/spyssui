@@ -18,6 +18,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { FindBranchComponent } from './find-branch/find-branch.component';
+import { OurbranchesComponent } from './ourbranches/ourbranches.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FindBranchComponent } from './find-branch/find-branch.component';
     EventsComponent,
     RegisterComponent,
     FindBranchComponent,
+    OurbranchesComponent,
   ],
   imports: [
     MatModule,

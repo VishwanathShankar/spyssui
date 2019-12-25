@@ -6,3 +6,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container {
     margin-top: 10%;
   }
+.description {
+    background-color: #e5e5e5;
+    min-height: 51px;
+    margin-top: 65px;
+}
+
+.contact-inline {
+    display: inline-block;
+}
+
+.contact-margin {
+    margin-top: 10px;
+}

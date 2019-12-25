@@ -8,13 +8,14 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { FindBranchComponent } from './find-branch/find-branch.component';
+import { OurbranchesComponent } from './ourbranches/ourbranches.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent,
   },
   {
-    path: 'home', component: MainComponent
+    path: 'home', component: HomeComponent
   },
   {
     path: 'about', component: AboutComponent
@@ -33,6 +34,9 @@ const routes: Routes = [
   },
   {
     path: 'findBranch', component: FindBranchComponent
+  },
+  {
+    path: 'Branches-list', component: OurbranchesComponent
   }
 ];
 
