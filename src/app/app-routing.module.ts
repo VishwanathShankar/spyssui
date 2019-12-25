@@ -7,13 +7,14 @@ import { MainComponent } from './main/main.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
+import { OurbranchesComponent } from './ourbranches/ourbranches.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent,
   },
   {
-    path: 'home', component: MainComponent
+    path: 'home', component: HomeComponent
   },
   {
     path: 'about', component: AboutComponent
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: 'register', component: RegisterComponent
+  },
+  {
+    path: 'Branches-list', component: OurbranchesComponent
   }
 ];
 

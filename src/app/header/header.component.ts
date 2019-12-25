@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   selectBranch = false;
   commonHeader: boolean;
   forgot: boolean;
+  dialogRef: any;
 
   constructor(private dialog: MatDialog) { }
 
@@ -25,13 +26,13 @@ export class HeaderComponent implements OnInit {
 
   openDialog(): void {
     this.forgot = true;
-    const dialogRef = this.dialog.open(this.login, {
+    this.dialogRef = this.dialog.open(this.login, {
       width: '325px',
       data: {}
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+    this.dialogRef.afterClosed().subscribe(result => {
+      // console.log('The dialog was closed');
     });
   }
 
@@ -39,6 +40,9 @@ export class HeaderComponent implements OnInit {
     this.forgot = value;
   }
 
+  closeDialog(){
+    this.dialogRef.close();
+  }
 
 
   common() {
@@ -49,6 +53,7 @@ export class HeaderComponent implements OnInit {
     headerimg.classList.add('logo-class-header');
     headerbut.classList.add('button-color-header');
     this.commonHeader = true;
+    this.closeDialog();
   }
 
   home() {
