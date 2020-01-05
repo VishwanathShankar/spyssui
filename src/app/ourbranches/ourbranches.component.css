@@ -7,6 +7,7 @@ tr.mat-header-row{
 
 th.mat-header-cell {
     color: white !important;
+    text-transform: uppercase;
 }
 div.mat-sort-header-arrow{
     color: white !important;

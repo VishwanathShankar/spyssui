@@ -18,6 +18,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { OurbranchesComponent } from './ourbranches/ourbranches.component';
+import { ConstantService } from './constant.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,10 +42,11 @@ import { OurbranchesComponent } from './ourbranches/ourbranches.component';
     ScrollingModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ConstantService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
