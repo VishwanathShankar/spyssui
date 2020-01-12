@@ -1,13 +1,29 @@
-.table-width{
-    width: 100%;
+.filter-width{
+    width: 43%;
+    padding-right: 5px;
 }
 tr.mat-header-row{
     background-color: #787675 !important;
 }
 
+th.mat-header-cell:last-of-type {
+    padding-right: 24px;
+    padding-left: 10px;
+}
+
+.sign-button{
+    background-color: #f26000;
+    color: #fff;
+    border-color: #f26000;
+    height: 38px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
 th.mat-header-cell {
     color: white !important;
     text-transform: uppercase;
+    text-align: center;
 }
 div.mat-sort-header-arrow{
     color: white !important;
@@ -17,4 +33,8 @@ th.mat-header-cell div div.ng-trigger{
 }
 .table-container{
     margin-top: 5px;
+}
+.table-col{
+    padding: 0px 14px;
+    text-align: center;
 }

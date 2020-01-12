@@ -5,7 +5,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ConstantService {
     static baseUrl = 'http://localhost:8080/';
     static urls = {
-        branches: 'branches'
+        branches: 'branches',
+        searchBranch: 'searchbranch'
     }
     constructor(private http:HttpClient) {
 

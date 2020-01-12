@@ -18,13 +18,12 @@ export class OurbranchesComponent implements OnInit {
     'state',
     'city',
     'contactNumber',
-    'batchType',
-    'latitude',
-    'longitude',
-    'placeId'];
+    'batchType'];
   dataSource = new MatTableDataSource([]);
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
+  sortField: any;
+  searchField: any;
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
@@ -36,13 +35,16 @@ export class OurbranchesComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.sortField = 'branchName';
+    this.searchField = '';
     this.getDetails({});
   }
 
   getDetails(pageData) {
-    this.constantService.post(ConstantService.urls.branches, {
+    this.constantService.post(ConstantService.urls.searchBranch, {
       'sortBy': 'ASC',
-      'column': 'branchName',
+      'search': this.searchField,
+      'columnname': this.sortField,
       'pageSize': '5',
       'pageNo': '0',
       ...pageData
@@ -51,7 +53,16 @@ export class OurbranchesComponent implements OnInit {
       this.length = data.totalElements;
     })
   }
+
+  search() {
+    this.getDetails({
+      'search': this.searchField,
+      'columnname': this.sortField,
+    });
+  }
+
   paginate({ pageIndex, previousPageIndex, pageSize, length }) {
-    this.getDetails({ pageSize, pageNo: pageIndex });
+    this.getDetails({ pageSize, pageNo: pageIndex,  'search': this.searchField,
+    'columnname': this.sortField, });
   }
 }
