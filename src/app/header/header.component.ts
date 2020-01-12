@@ -55,7 +55,7 @@ export class HeaderComponent implements OnInit {
     headerimg.classList.add("logo-class-header");
     headerbut.classList.add("button-color-header");
     this.commonHeader = true;
-    this.closeDialog();
+    // this.closeDialog();
   }
 
   home() {
