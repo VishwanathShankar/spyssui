@@ -33,6 +33,6 @@ jobs:
       with:
         service_account_key: ${{ secrets.GKE_SA_KEY }}
         project_id: ${{ secrets.GKE_PROJECT }}
-    - run: gsutil cp -r dist/ gs://spidercal-31101988-angular-app/
+    - run: gsutil cp -r dist/ gs://artifacts.spidercal-31101988.appspot.com/
       
     ##- run: npm test
