@@ -26,7 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     #- run: npm run build --if-present 
-    - run: ng build     
-    - run: ng test
+    - run: npm build     
+    - run: gsutil cp -r dist/ gs://spidercal-31101988-angular-app/
       
     ##- run: npm test
