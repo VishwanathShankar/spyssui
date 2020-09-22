@@ -52,7 +52,6 @@ jobs:
     - name: Build the Docker Image
       run: |-
         docker build \
-          -f Frontend/Dockerfile \
           --tag "gcr.io/$PROJECT_ID/$IMAGE:latest" \
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
           --build-arg GITHUB_REF="$GITHUB_REF" \
