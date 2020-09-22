@@ -1,5 +1,5 @@
 # Test 
-name: Basic CI / CD to build angular application and deploy to kubernetes cluster 
+name: Basic CI / CD to build angular application and deploy to kubernetes cluster. 
 on:
   push:
     branches: [ master ]
