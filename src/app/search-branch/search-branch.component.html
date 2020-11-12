@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="">
+      <h1>Find your nearest Branch</h1>
+    </div>
+      <mat-form-field>
+         <input type="text" matInput placeholder="Pincode" [(ngModel)]="findABranch" /> 
+      </mat-form-field>
+      <div class="row">
+        <mat-list class="col-2">
+          <h3 mat-subheader>Locations</h3>
+          <div *ngFor="let location of locations">
+            <mat-list-item>
+              <h4 mat-line>{{ location.name }}</h4>
+              <h4 mat-line>{{ location.pin }}</h4>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+          </div>
+        </mat-list>
+        <div class="col-10" >
+          <!-- <app-map mapStyleClass="branch-map"></app-map> -->
+        </div>
+      </div>
+  </div>

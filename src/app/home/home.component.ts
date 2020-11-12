@@ -42,6 +42,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchGoogleForNearestBranch() {
+    console.log("Inside google search");
+    var url ='http://www.google.com/search?q=' + 'SPYSS near me';
+    window.open(url,'_blank');
+  }
+
 
 
 }

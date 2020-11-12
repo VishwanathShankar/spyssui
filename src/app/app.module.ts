@@ -18,6 +18,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { FindBranchComponent } from './find-branch/find-branch.component';
+import { SearchBranchComponent } from './search-branch/search-branch.component';
 import { OurbranchesComponent } from './ourbranches/ourbranches.component';
 import { ConstantService } from './constant.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -38,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     FindBranchComponent,
     OurbranchesComponent,
+    SearchBranchComponent
   ],
   imports: [
     MatModule,
@@ -47,6 +49,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule
+    
   ],
   providers: [ConstantService],
   bootstrap: [AppComponent]

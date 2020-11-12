@@ -9,6 +9,8 @@ import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { FindBranchComponent } from './find-branch/find-branch.component';
 import { OurbranchesComponent } from './ourbranches/ourbranches.component';
+import { SearchBranchComponent } from './search-branch/search-branch.component';
+
 
 const routes: Routes = [
   {
@@ -37,11 +39,16 @@ const routes: Routes = [
   },
   {
     path: 'Branches-list', component: OurbranchesComponent
+  },
+  {
+    path: 'searchBranch', component: SearchBranchComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { useHash: true })  // .../#/crisis-center/], 
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

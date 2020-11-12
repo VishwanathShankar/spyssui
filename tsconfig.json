@@ -9,6 +9,8 @@
     "experimentalDecorators": true,
     "allowJs":true,
     "module": "esnext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "types": ["googlemaps"],
     "moduleResolution": "node",
     "importHelpers": true,
